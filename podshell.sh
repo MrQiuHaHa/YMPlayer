@@ -51,7 +51,7 @@ do
             fi
         done < $PODSPEC
 
-        pod repo push YMSpecs $PODSPEC --sources=JRSpecs,master --use-libraries --verbose --allow-warnings
+        pod repo push JRSpecs $PODSPEC --sources=JRSpecs,master --use-libraries --verbose --allow-warnings
         complete=true
     else
         complete=false

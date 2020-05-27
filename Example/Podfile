@@ -1,0 +1,14 @@
+
+source 'https://github.com/MrQiuHaHa/JRSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
+target 'YMPlayer_Example' do
+  pod 'YMPlayer', :path => '../'
+
+  target 'YMPlayer_Tests' do
+    inherit! :search_paths
+
+  end
+end

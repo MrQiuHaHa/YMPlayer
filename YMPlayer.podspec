@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
         core.source_files = 'YMPlayer/Classes/Core/**/*.{h,m}'
         core.public_header_files = 'YMPlayer/Classes/Core/**/*.h'
         core.frameworks = 'UIKit', 'MediaPlayer', 'AVFoundation'
-        core.dependency 'JRIJKMediaFramework', '0.2.4'
+        core.dependency 'JRIJKMediaFramework', '0.2.5'
   end
   
   s.subspec 'Common' do |common|
@@ -81,7 +81,7 @@ TODO: Add long description of the pod here.
       ijkplayer.source_files = 'YMPlayer/Classes/ijkplayer/*.{h,m}'
       ijkplayer.public_header_files = 'YMPlayer/Classes/ijkplayer/*.h'
       ijkplayer.dependency 'YMPlayer/Core'
-      ijkplayer.dependency 'JRIJKMediaFramework', '0.2.4'
+      ijkplayer.dependency 'JRIJKMediaFramework', '0.2.5'
   end
 
   

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YMPlayer'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A short description of YMPlayer.'
 
 
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
         core.source_files = 'YMPlayer/Classes/Core/**/*.{h,m}'
         core.public_header_files = 'YMPlayer/Classes/Core/**/*.h'
         core.frameworks = 'UIKit', 'MediaPlayer', 'AVFoundation'
-        core.dependency 'JRIJKMediaFramework', '0.2.5'
+        core.dependency 'JRIJKMediaFramework', '0.2.6'
   end
   
   s.subspec 'Common' do |common|
@@ -46,7 +46,6 @@ TODO: Add long description of the pod here.
         videoControlView.dependency 'YMPlayer/Core'
         videoControlView.dependency 'YMPlayer/Common'
         videoControlView.dependency 'YMPlayer/AVPlayer'
-#        videoControlView.dependency 'YMPlayer/KSYMediaPlayer'
         videoControlView.dependency 'YMPlayer/ijkplayer'
     end
     
@@ -64,24 +63,12 @@ TODO: Add long description of the pod here.
         avPlayer.dependency 'YMPlayer/Core'
     end
     
-    #第三方播放器金山云
-#    s.subspec 'KSYMediaPlayer' do |ksyMediaPlayer|
-#        ksyMediaPlayer.source_files = 'YMPlayer/Classes/KSYMediaPlayer/*.{h,m}'
-#        ksyMediaPlayer.public_header_files = 'YMPlayer/Classes/KSYMediaPlayer/*.h'
-#        ksyMediaPlayer.dependency 'YMPlayer/Core'
-#        ksyMediaPlayer.dependency 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod'
-##        ksyMediaPlayer.dependency 'ksyhttpcache'
-#        ksyMediaPlayer.pod_target_xcconfig = {
-#            'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)'
-#        }
-#    end
-    
     #第三方播放器ijkplayer
   s.subspec 'ijkplayer' do |ijkplayer|
       ijkplayer.source_files = 'YMPlayer/Classes/ijkplayer/*.{h,m}'
       ijkplayer.public_header_files = 'YMPlayer/Classes/ijkplayer/*.h'
       ijkplayer.dependency 'YMPlayer/Core'
-      ijkplayer.dependency 'JRIJKMediaFramework', '0.2.5'
+      ijkplayer.dependency 'JRIJKMediaFramework', '0.2.6'
   end
 
   

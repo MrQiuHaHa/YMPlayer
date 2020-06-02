@@ -13,11 +13,6 @@
 #import "ZFPlayer.h"
 #endif
 
-//#if __has_include(<YMPlayer/KSMediaPlayerManager.h>)
-//#import <YMPlayer/KSMediaPlayerManager.h>
-//#else
-//#import "KSMediaPlayerManager.h"
-//#endif
 
 #if __has_include(<YMPlayer/ZFIJKPlayerManager.h>)
 #import <YMPlayer/ZFIJKPlayerManager.h>
@@ -66,7 +61,6 @@
     };
     
 //    ZFAVPlayerManager *playerManager = [[ZFAVPlayerManager alloc] init];
-//    KSMediaPlayerManager *playerManager = [[KSMediaPlayerManager alloc] init];
     ZFIJKPlayerManager *playerManager = [[ZFIJKPlayerManager alloc] init];
     
     self.player = [[ZFPlayerController alloc] initWithPlayerManager:playerManager containerView:self.view];
